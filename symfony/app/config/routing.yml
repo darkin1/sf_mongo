@@ -5,3 +5,11 @@
 aaa:
     path:      /lucky/number
     defaults:  { _controller: AppBundle:Lucky:number }
+
+bbb:
+    path:      /api/lucky/number
+    defaults:  { _controller: AppBundle:Lucky:apiNumber }
+
+ccc:
+    path:      /lucky/number/{count}
+    defaults:  { _controller: AppBundle:Lucky:number2 }
