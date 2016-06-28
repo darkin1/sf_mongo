@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd .. && \
-    chmod 777 -R ./app/cache && \
-    chmod 777 -R ./app/logs
+    chmod 0755 -R ./app/cache && \
+    chmod 0755 -R ./app/logs
