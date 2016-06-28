@@ -55,11 +55,6 @@ class LuckyController extends Controller
 
         $numbersList = implode(',', $numbers);
 
-//        $html = $this->container->get('templating')->render(
-//            'lucky/number.html.twig',
-//            array('luckyNumberList' => $numbersList)
-//        );
-
         return $this->render(
             'lucky/number.html.twig',
             array('luckyNumberList' => $numbersList)
