@@ -2,6 +2,10 @@
 #    resource: "@AppBundle/Controller/"
 #    type:     annotation
 
+app:
+    path:      /
+    defaults:  { _controller: AppBundle:Default:index }
+
 aaa:
     path:      /lucky/number
     defaults:  { _controller: AppBundle:Lucky:number }
