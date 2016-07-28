@@ -8,7 +8,7 @@ mongodb:
 redis:
   image: redis:3.2.1-alpine
   restart: on-failure:5
-  command: redis-server /etc/redis/redis.conf --notify-keyspace-events AEK
+  command: redis-server --notify-keyspace-events AEK
   ports:
     - "127.0.0.1:8001:6379"
   log_opt:
