@@ -64,8 +64,8 @@ doctrine:
 doctrine_mongodb:
     connections:
         default:
-            #server: "%mongodb_server%"
-            server: mongodb://localhost:8000
+            server: "%mongodb_server%"
+#            server: mongodb://127.0.0.1:8000
             options: {}
     default_database: test_database
     document_managers:
@@ -78,11 +78,11 @@ snc_redis:
         default:
             type: predis
             alias: default
-            dsn: redis://localhost
+            dsn: redis://redis
         doctrine:
             type: predis
             alias: doctrine
-            dsn: redis://localhost
+            dsn: redis://redis
     # configure doctrine caching
     doctrine:
         metadata_cache:
