@@ -9,7 +9,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 class Product
 {
 
-    /** @MongoDB\ReferenceMany(targetDocument="Comment", mappedBy="product", cascade={"persist", "remove"}) */
+    /** @MongoDB\ReferenceMany(targetDocument="Documents\Comment", mappedBy="product", cascade={"all"}) */
     private $comments;
     
     /**

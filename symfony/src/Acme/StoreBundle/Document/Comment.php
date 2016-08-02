@@ -24,7 +24,7 @@ class Comment
      */
     private $description;
 
-    /** @MongoDB\ReferenceOne(targetDocument="Product", inversedBy="comments") */
+    /** @MongoDB\ReferenceOne(targetDocument="Documents\Product", inversedBy="comments") */
     private $product;
 
     /**
